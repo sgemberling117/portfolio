@@ -1,0 +1,66 @@
+.popup {
+  display: flex;
+  justify-content: flex-end;
+  opacity: 0;
+  -webkit-transition: opacity ease-in-out 2s;
+  -moz-transition: opacity ease-in-out 2s;
+  -o-transition: opacity ease-in-out 2s;
+  -ms-transition: opacity ease-in-out 2s;
+  transition: opacity ease-in-out 2s;
+}
+
+.popup > p {
+  padding: 15px 0;
+  border: 2px white solid;
+  margin-right: 15px;
+  border-radius: 5px;
+  text-align: center;
+  width: 300px;
+}
+
+.popup#fade {
+  opacity: 1;
+}
+
+#form-container {
+  display: flex;
+  justify-content: center;
+}
+
+form > div {
+  display: flex;
+}
+
+input {
+  border: 1px white solid;
+  border-radius: 5px;
+  width: 200px;
+  color: white;
+}
+
+textarea {
+  border: 1px white solid;
+  border-radius: 5px;
+  height: 150px;
+  width: 200px;
+  color: white;
+}
+
+#button-area {
+  display: flex;
+  justify-content: flex-end;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: 1px white solid;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button:hover {
+  cursor: pointer;
+}

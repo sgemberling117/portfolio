@@ -1,0 +1,23 @@
+#text-container {
+    display: flex;
+    justify-content: center;
+}
+
+#text {
+    margin-top: 3px;
+    font-size: 21px;
+}
+
+#pointer {
+    font-size: 23px;
+    animation: blinkPointer 500ms steps(40) infinite normal
+}
+
+@keyframes blinkPointer {
+    from {
+        color: black;
+    }
+    to {
+        color: white;
+    }
+}

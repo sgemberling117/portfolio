@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+}
+
+body > div {
+    max-width: 100vw;
+}
+
+body > div > div {
+    display: flex;
+    max-width: 100vw;
+}
+
+.title {
+    display: flex; 
+    justify-content: center;
+}
+
+.title > div {
+    width: 80vw;
+}
+
+#about-me, #skills-area {
+    display:flex;
+    justify-content: center;
+}
+
+#about-me > div, #skills-area > div{
+    width: 90vw;
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    columns: 2;
+}
+
+p > a {
+    color: white;
+}
+
+@media (min-width: 600px) {
+    .title > div {
+        width: 60vw;
+    }
+
+    #about-me > div, #skills-area > div{
+        width: 50vw;
+    }
+}

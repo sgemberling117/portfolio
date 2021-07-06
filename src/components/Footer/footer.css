@@ -1,0 +1,28 @@
+footer {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+
+.site-logo-area {
+    display: flex;
+    justify-content: space-between;
+    width: 70px;
+    margin-left: 20px;
+}
+
+.site-logos {
+    height: 30px;
+}
+
+.copyright {
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+@media (max-width:500px) {
+    footer {
+        flex-direction: column;
+    }
+}
