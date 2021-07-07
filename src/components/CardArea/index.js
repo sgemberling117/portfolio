@@ -34,7 +34,7 @@ const CardArea = () => {
                 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
             </Helmet>
             <div id='card-container'>
-                {data.allMarkdownRemark.edges.sort().map(({node}) => 
+                {data.allMarkdownRemark.edges.sort((a, b) => a.node.frontmatter.name - b.node.frontmatter.name).map(({node}) => 
                     <div className='card' key={node.id}>
                         <div className="card-image waves-effect waves-block waves-light">
                             <img className="activator" src={node.frontmatter.img} alt={node.frontmatter.title}/>

@@ -14,7 +14,9 @@ const Contact = () => {
                 <EmailForm />
                 <br></br>
                 <br></br>
-                <img src='' alt='resume'></img>
+                <p id='resume-link'>
+                    Click&nbsp;<a href='/Resume.pdf' target='#blank'>here</a>&nbsp;to look at my resume.
+                </p>
             </Layout>
         </>
     )
